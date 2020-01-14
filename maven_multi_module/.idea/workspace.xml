@@ -2,22 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="886552d8-56cd-4321-a24d-424423278d30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven_controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven_dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven_multi_module.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/lenovo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven_dao/src/main/java/com/yanl/dao/IAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven_dao/src/main/java/com/yanl/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven_dao/src/main/resources/spring/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven_dao/src/test/java/com/yanl/test/DaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven_controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven_controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ssm: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ssm: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="account: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -39,18 +85,62 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/maven_dao/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ly\java\maven\maven_multi_module\maven_dao\src\main\resources" />
+      <recent name="C:\ly\java\maven\maven_multi_module\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ly\java\maven\maven_multi_module\maven_dao\src\main\resources\spring" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DaoTest.testDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="maven_dao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yanl.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yanl.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yanl.test.DaoTest" />
+      <option name="METHOD_NAME" value="testDao" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DaoTest.testDao" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@748596ab" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -67,8 +157,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578972699050</updated>
-      <workItem from="1578972701808" duration="2199000" />
+      <workItem from="1578972701808" duration="3619000" />
+      <workItem from="1579000347542" duration="2628000" />
     </task>
+    <task id="LOCAL-00001" summary="configure environment ok">
+      <created>1578979559318</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578979559318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,28 +175,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="configure environment ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="configure environment ok" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="513" y="118" key="CommitChangelistDialog2" timestamp="1578979546659">
+    <state x="-1906" y="288" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579001750362">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1906" y="288" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579001750362" />
+    <state x="-1155" y="209" key="#com.intellij.ide.util.MemberChooser" timestamp="1579000769969">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1155" y="209" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579000769969" />
+    <state x="513" y="118" key="CommitChangelistDialog2" timestamp="1578979558756">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="513" y="118" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578979546659" />
-    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1578973053609">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="513" y="118" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578979558756" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1579003000696">
+      <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579003000696" />
     <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578973053609" />
-    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1578973053608">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1579003000696">
+      <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579003000696" />
     <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578973053608" />
-    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1578973053608">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1579003000695">
+      <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579003000695" />
     <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578973053608" />
-    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1578973053608">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1579003000696">
+      <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579003000696" />
     <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1578973053608" />
+    <state x="-1459" y="167" key="SettingsEditor" timestamp="1579000306021">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1459" y="167" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579000306021" />
     <state x="640" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1578972744247">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
