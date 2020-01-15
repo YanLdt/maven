@@ -11,7 +11,7 @@
     <modules>
         <module>maven_dao</module>
         <module>maven_service</module>
-        <module>maven_controller</module>
+        <module>maven_web</module>
     </modules>
 
 
