@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <import resource="applicationContext-dao.xml"/>
+
+<!--    Spring AOP部分使用JDK动态代理或者CGLIB来为目标对象创建代理，如果被代理的目标对象实现了至少一个接口，则会使用JDK动态代理。
+        所有该目标类型实现的接口都将被代理。若该目标对象没有实现任何接口，则创建一个Cglib代理。
+
+        =========================================================================
+        使用Cglib代理的时候，通过getBean()取出的注入对象既可以是普通对象，也可以是接口，
+        通过JDK动态代理就只能使用接口。而一般代码习惯中使用JDK动态代理还是更常见的。
+        ==========================================================================
+        JDK动态代理的代理对象不需要实现接口,但是目标对象一定要实现接口
+        如果目标对象只是一个单独的对象,并没有实现任何的接口,这个时候就可以使用以目标对象子类的方式类实现代理,这种方法就叫做:Cglib代理
+        所以如果要代理实现类  就需要使用Cglib代理,需要加上下面的配置
+        让Spring强制使用Cglib代理：
+        -->
+<!--    <aop:aspectj-autoproxy proxy-target-class="true"/>-->
+
+
+    <context:component-scan base-package="com.yanl.service"/>
+
+<!--    配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+<!--配置事务的通知-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+<!--    配置aop-->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.yanl.service.impl.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut"/>
+    </aop:config>
+</beans>

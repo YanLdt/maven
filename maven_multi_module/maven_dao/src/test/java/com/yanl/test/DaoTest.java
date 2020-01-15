@@ -15,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class DaoTest {
     @Test
     public void testDao() {
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring/applicationContext-dao.xml");
         IAccountDao accountDao = ac.getBean(IAccountDao.class);
         Account account = accountDao.findById(1);
         System.out.println(account.toString());
