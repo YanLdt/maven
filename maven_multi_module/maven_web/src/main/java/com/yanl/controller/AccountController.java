@@ -23,8 +23,8 @@ public class AccountController {
 
     /**
      * 根据ID查询
-     * @param model
-     * @return
+     * @param model 存放查询得到数据
+     * @return 返回success页面
      */
     @RequestMapping("/findById")
     public String findById(Model model){
